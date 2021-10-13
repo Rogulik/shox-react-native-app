@@ -23,10 +23,17 @@ export const shoppingSlice = createSlice({
     orderItems: (state, action) => {
       state.ordersHistory = [...state.ordersHistory, action.payload];
     },
+    clearBasket: (state) => {
+      state.basket = [];
+    },
   },
 });
 
-export const { addItemToBasket, removeItemFromShoppingCart, orderItems } =
-  shoppingSlice.actions;
+export const {
+  addItemToBasket,
+  removeItemFromShoppingCart,
+  orderItems,
+  clearBasket,
+} = shoppingSlice.actions;
 
 export default shoppingSlice.reducer;

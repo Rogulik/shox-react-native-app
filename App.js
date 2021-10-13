@@ -16,11 +16,8 @@ export default function App() {
     return null;
   }
   return (
-    <>
-      <Provider store={store}>
-        <Nav />
-      </Provider>
-      <StatusBar style="auto" />
-    </>
+    <Provider store={store}>
+      <Nav />
+    </Provider>
   );
 }
