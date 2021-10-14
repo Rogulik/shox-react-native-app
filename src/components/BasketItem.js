@@ -28,8 +28,12 @@ const BasketItem = (props) => {
               <Image style={styles.image} source={{ uri: image }} />
             </View>
             <View style={styles.content}>
-              <Text style={styles.title}>{title}</Text>
-              <Text style={styles.price}>${price.toFixed(2)}</Text>
+              <Text style={styles.title} testID="title">
+                {title}
+              </Text>
+              <Text testID="price" style={styles.price}>
+                ${price.toFixed(2)}
+              </Text>
             </View>
 
             <View style={styles.buttonsContainer}>

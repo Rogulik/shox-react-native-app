@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlertProduct should render alert 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "green",
+      "bottom": 0,
+      "height": 50,
+      "justifyContent": "center",
+      "left": 0,
+      "opacity": undefined,
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  />
+</View>
+`;
